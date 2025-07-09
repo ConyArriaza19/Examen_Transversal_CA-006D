@@ -105,13 +105,13 @@ while True:
 
                 p_max = int(input("\nIngrese precio máximo: "))
 
-                if (p_max > 0):
+                if (p_max > p_min):
 
                     break
                 
                 else:
 
-                    print("\nERROR: El precio no puede ser un número negativo.")
+                    print("\nERROR: El precio máximo no puede ser menor al mínimo.")
 
             except(ValueError):
 
